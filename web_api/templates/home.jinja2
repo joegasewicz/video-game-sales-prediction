@@ -1,0 +1,57 @@
+{% extends "base.jinja2" %}
+{% block content %}
+   <div class="p-4 bg-body-tertiary rounded-3">
+    <h1 class="text-center text-body-emphasis">Video Game Sales Prediction</h1>
+    <p class="text-center col-lg-8 mx-auto fs-5 text-muted">
+      Visit a game review on metacritic.com such as <a href="https://www.metacritic.com/game/the-legend-of-zelda-ocarina-of-time/">Zelda Review</a>
+        &amp; take the <i>Year of Release, Critic score, Critic Counts, User Score & User Count.</i>.
+        <br />Then fill in the form below and submit to see the predicted sales.
+    </p>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form action="" class="form">
+
+                <div class="mb-3">
+                    <label for="year_of_release" class="form-label">Year of Release</label>
+                    <input type="text" class="form-control" id="year_of_release" placeholder="example: 2023" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="critic_score" class="form-label">Critic Score</label>
+                    <input type="text" class="form-control" id="critic_score" placeholder="example: 86.0" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="critic_count" class="form-label">Critic Count</label>
+                    <input type="text" class="form-control" id="critic_count" placeholder="example: 150" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="user_score" class="form-label">User Score</label>
+                    <input type="text" class="form-control" id="user_score" placeholder="example: 91.0" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="user_count" class="form-label">User Count</label>
+                    <input type="text" class="form-control" id="user_count" placeholder="example: 360" />
+                </div>
+
+
+                <div class="form__buttons gap-2 mb-5 jus">
+                  <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                    Get Result
+                  </button>
+                  <a href="/" class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+                    Cancel
+                  </a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+  </div>
+
+{% endblock %}
